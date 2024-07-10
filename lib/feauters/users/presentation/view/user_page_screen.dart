@@ -24,14 +24,14 @@ class _UserPageScreenState extends State<UserPageScreen> {
     const spacer = SizedBox(height: 16.0);
 
     return Scaffold(
-      backgroundColor: HexColors.white,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         title: Text(
           Titles.profile,
           style: Theme.of(context).textTheme.titleMedium,
         ),
         surfaceTintColor: Colors.transparent,
-        backgroundColor: HexColors.white,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         bottom: const PreferredSize(
           preferredSize: Size.fromHeight(1),
           child: Divider(height: 1),
